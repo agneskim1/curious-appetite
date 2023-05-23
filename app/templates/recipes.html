@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='recipes.css') }}" />
+    <title>Recipe_Cards</title>
+</head>
+
+<body>
+    <h2>Recipes With {{ingredient}}</h2>
+
+    <!-- <img src="{{image}}" /> -->
+    <section class="recipe_card">
+    {% for recipe in recipes %}
+        <h3>{{recipe.label.title()}}</h3>
+        <img class="recipe_pic" src="{{recipe.image}}"/>
+        <ul>
+            {%for ingredient in recipe.ingredientLines%}
+            <li class="ingredient"> {{ingredient}}</li>
+            {% endfor %}
+        </ul>
+        <p>
+            Yields {{recipe.yield}} Servings
+        </p>
+    {% endfor %}
+    </section>
+</body>
+
+</html>
