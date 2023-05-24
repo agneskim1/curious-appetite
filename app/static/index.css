@@ -1,8 +1,39 @@
 * {
-    background-color: pink;
+    /* background-color: pink; */
+    font-family: sans-serif;
 }
 
-.main_photo {
-    height: 10rem;
-    width: 20rem;
+
+.background {
+    /* background: url("../static/assets/main-food.jpeg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vh;
+
+}
+.title {
+    width: 100%;
+    text-align: left;
+    padding: 8vh;
+    margin-top: 4rem;
+    margin-left: 3rem;
+    font-size: 4rem;
+    color:aliceblue;
+    /* border: 3px black solid; */
+}
+
+.search_bar {
+    text-align: center;
+    /* border: 2px black solid; */
+    margin-left: 20vh;
+    font-size: 2rem;
+    width: 30%;
+    padding: 3vh;
+}
+
+#ingredient {
+    height: 2vh;
 }

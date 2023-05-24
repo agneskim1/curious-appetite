@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="{{url_for('static', filename='index.css') }}" />
     <title>Recipes</title>
 </head>
-<body>
-    <img class="main_photo" src="../static/assets/food-background.jpeg"/>
+<body class="background" style="background-image: url(../static/assets/main-food.jpeg);">
     <header>
-        <h1>Curious Appetite</h1>
+        <h1 class="title">Curious Appetite</h1>
     </header>
-    <form action ="/recipes">
-        <label for="ingredient">Find Recipes!</label><br>
-        <input type="text" id="ingredient" name="ingredient"><br>
-        <input type="submit" value="Submit">
-    </form>
+    <section class="search_bar" >
+        <form action ="/recipes">
+            <label for="ingredient">Find Recipes!</label><br>
+            <input type="text" id="ingredient" name="ingredient" size="20"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </body>
 </html>
 
