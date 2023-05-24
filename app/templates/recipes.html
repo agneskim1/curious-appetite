@@ -5,26 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='recipes.css') }}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='recipes.css')}}" />
+
+    <!-- <link rel="stylesheet" href="..static/templates/recipes.css'" /> -->
     <title>Recipe_Cards</title>
 </head>
 
 <body>
-    <h2>Recipes With {{ingredient}}</h2>
+    <h2 class="header">Recipes with {{ingredient}}</h2>
 
     <!-- <img src="{{image}}" /> -->
     <section class="recipe_card">
     {% for recipe in recipes %}
-        <h3>{{recipe.label.title()}}</h3>
+        <h3 class="recipe_title">{{recipe.label.title()}}</h3>
+        <p class="yields">
+            Yields {{recipe.yield}} Servings
+        </p>
         <img class="recipe_pic" src="{{recipe.image}}"/>
         <ul>
+            <h2 class="ingredient_label">Ingredients:</h2>
+
             {%for ingredient in recipe.ingredientLines%}
             <li class="ingredient"> {{ingredient}}</li>
             {% endfor %}
         </ul>
-        <p>
-            Yields {{recipe.yield}} Servings
-        </p>
     {% endfor %}
     </section>
 </body>

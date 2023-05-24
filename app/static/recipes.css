@@ -1,11 +1,86 @@
 body {
-    background-color: pink;
+    background-color: #e4dbdb;
     font-family: sans-serif;
-    font-size: 1rem;
 }
 
 .ingredient {
-    color: red;
+    color: black;
+}
+.header {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: monospace;
+    background-image: url("app/static/assets/food-background.jpeg")
+}
+.recipe_title {
+    font-size: 3rem;
+    /* border: black 2px solid; */
+    justify-content: center;
+    text-align: center;
+    /* margin: 1rem; */
+    /* padding: 1rem; */
+    width: 100% ;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    max-width: auto;
+    height: 100%;
+    max-height: 40rem;
+    border-radius: 3rem;
+    display: block;
+    margin: 3rem;
+    margin-left: 6rem;
+    margin-top: 2rem;
+    justify-content: left;
+    align-items: left;
+    border:0.2rem black groove;
+}
+
+.recipe_card {
+    display: flex;
+    background: #fff;
+    opacity: 1rem;
+    margin: 4rem auto;
+    width: 90%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* gap: 0.5rem; */
+    /* border: 3px solid red; */
+    border-radius: 2rem;
+
+}
+
+.yields {
+    /* border: 3px solid black; */
+    margin: 0.5rem;
+    justify-content: right;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 1rem;
+    width: 100%;
+
+}
+
+.ingredient_label {
+    width: 40%;
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+ul {
+    /* margin: auto; */
+    margin-top: 1rem;
+    /* border: 2px black solid; */
+    height: auto;
+    width: 50%;
+}
+
+li {
+    padding: 0.4rem;
+    margin-left: 1rem;
 }
 
 
