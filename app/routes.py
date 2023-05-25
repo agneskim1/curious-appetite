@@ -21,10 +21,9 @@ def welcome():
     if ingredient:
         return get_recipe_search(ingredient)
     else:
-        return render_template('home.html')
+        return render_template('index.html')
 
 def get_recipe_search(ingredient):
-    home=render_template('home.html')
     path= "https://api.edamam.com/search"
 
     app_key= os.environ.get('API_KEY')
