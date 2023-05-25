@@ -1,6 +1,6 @@
 * {
     /* background-color: pink; */
-    font-family: sans-serif;
+    font-family: fantasy;
 }
 
 
@@ -22,18 +22,33 @@
     margin-left: 3rem;
     font-size: 4rem;
     color:aliceblue;
+    font-family: fantasy;
     /* border: 3px black solid; */
 }
 
 .search_bar {
     text-align: center;
     /* border: 2px black solid; */
-    margin-left: 20vh;
+    margin-left: 10vh;
     font-size: 2rem;
-    width: 30%;
+    width: 50%;
     padding: 3vh;
+    
 }
 
-#ingredient {
-    height: 2vh;
+#searchbox {
+    height: 3vh;
+    width: 35vh;
+    font-family: sans-serif;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    color: black;
+}
+
+#searchbutton {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
 }

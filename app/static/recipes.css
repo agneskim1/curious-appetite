@@ -11,8 +11,24 @@ body {
     font-size: 4rem;
     color: white;
     font-family: monospace;
-    background-image: url("app/static/assets/food-background.jpeg")
+    margin-bottom: 0;
 }
+.return_home {
+    /* border: black 2px solid; */
+    text-align: center;
+    font-family: monospace;
+    font-size: 4vh;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 1rem;
+}
+
+.return_home a {
+    text-decoration: none;
+    color: black;
+
+}
+
 .recipe_title {
     font-size: 3rem;
     /* border: black 2px solid; */
@@ -30,9 +46,9 @@ img {
     max-height: 40rem;
     border-radius: 3rem;
     display: block;
-    margin: 3rem;
-    margin-left: 6rem;
+    margin-left: 20vh;
     margin-top: 2rem;
+    margin-right: 5rem;
     justify-content: left;
     align-items: left;
     border:0.2rem black groove;
@@ -42,7 +58,7 @@ img {
     display: flex;
     background: #fff;
     opacity: 1rem;
-    margin: 4rem auto;
+    margin: 3rem auto;
     width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,9 +89,10 @@ img {
 ul {
     /* margin: auto; */
     margin-top: 1rem;
+    margin-left: 10vh;
     /* border: 2px black solid; */
     height: auto;
-    width: 50%;
+    width: 30%;
 }
 
 li {
