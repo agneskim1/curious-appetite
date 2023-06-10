@@ -14,7 +14,6 @@ body {
     margin-bottom: 0;
 }
 .return_home {
-    /* border: black 2px solid; */
     text-align: center;
     font-family: monospace;
     font-size: 4vh;
@@ -31,11 +30,8 @@ body {
 
 .recipe_title {
     font-size: 3rem;
-    /* border: black 2px solid; */
     justify-content: center;
     text-align: center;
-    /* margin: 1rem; */
-    /* padding: 1rem; */
     width: 100% ;
     margin-bottom: 0.5rem;
 }
@@ -62,14 +58,11 @@ img {
     width: 90%;
     flex-direction: row;
     flex-wrap: wrap;
-    /* gap: 0.5rem; */
-    /* border: 3px solid red; */
     border-radius: 2rem;
 
 }
 
 .yields {
-    /* border: 3px solid black; */
     margin: 0.5rem;
     justify-content: right;
     text-align: center;
@@ -87,10 +80,8 @@ img {
 }
 
 ul {
-    /* margin: auto; */
     margin-top: 1rem;
     margin-left: 10vh;
-    /* border: 2px black solid; */
     height: auto;
     width: 30%;
 }

@@ -1,11 +1,9 @@
 * {
-    /* background-color: pink; */
     font-family: fantasy;
 }
 
 
 .background {
-    /* background: url("../static/assets/main-food.jpeg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,12 +21,10 @@
     font-size: 4rem;
     color:aliceblue;
     font-family: fantasy;
-    /* border: 3px black solid; */
 }
 
 .search_bar {
     text-align: center;
-    /* border: 2px black solid; */
     margin-left: 10vh;
     font-size: 2rem;
     width: 50%;
